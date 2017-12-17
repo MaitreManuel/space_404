@@ -3471,9 +3471,6 @@ footer {
       position: absolute;
       top: 50%;
       z-index: 3; }
-      @supports not (clip-path: inset(50% 0 0 0)) {
-        .lost-planet-box .space .lost-planet .ring-before, .lost-planet-box .space .lost-planet .ring-after, .lost-planet-box .space .lost-planet .ring-bigger-before, .lost-planet-box .space .lost-planet .ring-bigger-after {
-          display: none; } }
       .lost-planet-box .space .lost-planet .ring-before, .lost-planet-box .space .lost-planet .ring-after, .lost-planet-box .space .lost-planet .ring-bigger-before, .lost-planet-box .space .lost-planet .ring-bigger-after {
         content: "";
         border-radius: 50%;
@@ -3527,7 +3524,7 @@ footer {
           height: 50px;
           left: -16px;
           position: absolute;
-          top: 3px;
+          top: 6px;
           width: 50px;
           z-index: 2;
           -webkit-animation: small-tentacle 12s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;

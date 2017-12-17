@@ -15,7 +15,8 @@
     "build": "NODE_ENV=production webpack -p"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-beta"
+    "bootstrap": "^4.0.0-beta",
+    "font-awesome": "^4.7.0"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

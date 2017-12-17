@@ -10,6 +10,8 @@
 @import '~bootstrap/scss/buttons';
 // components
 @import 'component/button';
+@import 'component/header';
+@import 'component/footer';
 // tools
 @import 'tool/animation';
 // others
@@ -45,4 +47,23 @@ body {
     position: relative;
     width: 100%;
     z-index: 3;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    .wrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        span {
+            color: rgba($grey, .3);
+        }
+    }
 }

@@ -87,10 +87,30 @@ module.exports = __webpack_require__(1);
 "use strict";
 
 
-__webpack_require__(2);
+var _clipPath = __webpack_require__(2);
+
+var _clipPath2 = _interopRequireDefault(_clipPath);
+
+__webpack_require__(3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+ClipPath('.ring-before', '50% 0 0 0');
+ClipPath('.ring-bigger-before', '50% 0 0 0');
+ClipPath('.ring-after', '0 0 50% 0');
+ClipPath('.ring-bigger-after', '0 0 50% 0');
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(t,e){"use strict"; true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (e),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):e("object"==typeof exports?exports:t)}(this,function(t){"use strict";function e(){return"clip-path-"+Math.random().toString(36).substring(7)}function i(t,i){i=i.replace(/px|%|em/g,"");var n=t.getAttribute("data-clip-path-id");if(n)document.querySelector("#"+n+" > polygon").setAttribute("points",i);else{var r=e(),o=document.createElementNS("http://www.w3.org/2000/svg","svg");o.setAttribute("width","0"),o.setAttribute("height","0"),o.setAttributeNS("http://www.w3.org/2000/xmlns/","xmlns:xlink","http://www.w3.org/1999/xlink");var p=document.createElementNS("http://www.w3.org/2000/svg","clipPath");p.setAttribute("id",r);var a=document.createElementNS("http://www.w3.org/2000/svg","polygon");a.setAttribute("points",i),p.appendChild(a),o.appendChild(p),document.body.appendChild(o),t.setAttribute("data-clip-path-id",r),setTimeout(function(){t.style.clipPath="url(#"+r+")"},0)}}function n(t,e,n){n=void 0!==n?n:o,void 0!==t.style.webkitClipPath?t.style.webkitClipPath="polygon("+e+")":n?t.style.clipPath="polygon("+e+")":i(t,e)}function r(t,e,i){if(!t)return console.error("Missing selector"),!1;var r=document.querySelectorAll(t||"");Array.prototype.forEach.call(r,function(t){(e=e||t.getAttribute("data-clip"))?n(t,e,i):console.error("Missing clip-path parameters. Please check ClipPath() arguments or data-clip attribute.",t)})}var o=function(){var t=document.createElement("div");return t.style.clipPath="polygon(0 0, 0 0, 0 0, 0 0)","polygon(0 0, 0 0, 0 0, 0 0)"===t.style.clipPath}();r.applyClipPath=n,"undefined"!=typeof jQuery&&function(t,e){t.fn.ClipPath=function(i){return i===Object(i)&&i.path&&(i=i.path),this.each(function(){e.applyClipPath(this,t(this).attr("data-clip")||i)})}}(jQuery,r),t.ClipPath=r});
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

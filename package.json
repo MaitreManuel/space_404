@@ -12,7 +12,8 @@
     "build:stats": "webpack --profile --json > webpack-stats.json",
     "build:watch": "webpack --watch",
     "build:dev": "webpack",
-    "build": "NODE_ENV=production webpack -p"
+    "build": "NODE_ENV=production webpack -p",
+    "deploy": "git subtree push --prefix web origin gh-pages"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta",

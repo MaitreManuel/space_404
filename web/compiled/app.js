@@ -95,10 +95,10 @@ __webpack_require__(3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-ClipPath('.ring-before', '50% 0 0 0');
-ClipPath('.ring-bigger-before', '50% 0 0 0');
-ClipPath('.ring-after', '0 0 50% 0');
-ClipPath('.ring-bigger-after', '0 0 50% 0');
+(0, _clipPath2.default)('.ring-before', '50% 0 0 0');
+(0, _clipPath2.default)('.ring-bigger-before', '50% 0 0 0');
+(0, _clipPath2.default)('.ring-after', '0 0 50% 0');
+(0, _clipPath2.default)('.ring-bigger-after', '0 0 50% 0');
 
 /***/ }),
 /* 2 */

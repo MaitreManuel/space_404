@@ -1,4 +1,4 @@
-import Clipath from 'clip-path';
+import ClipPath from 'clip-path';
 
 import './main.scss';
 
